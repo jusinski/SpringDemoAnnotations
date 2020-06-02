@@ -14,9 +14,13 @@ public class AnnotationDemoApp {
         Coach theCoach = context.getBean("kendoCoach", Coach.class);
         Coach theCoachTwo = context.getBean("runningCoach", Coach.class);
 
-        // call a method
+        // call a method daily workout
         System.out.println(theCoach.getDailyWorkout());
         System.out.println(theCoachTwo.getDailyWorkout());
+
+        // call method daily fortune
+        System.out.println(theCoach.getDailyFortune());
+        System.out.println(theCoachTwo.getDailyFortune());
 
         // close
         context.close();
